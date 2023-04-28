@@ -1,25 +1,19 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const BMICalculatorApp());
-}
- class BMICalculatorApp extends StatelessWidget {
-  const BMICalculatorApp({super.key});
+import 'screens/home.dart';
 
+void main() {
+  runApp(BMICalculatorApp());
+}
+
+class BMICalculatorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowMaterialGrid: false,
+      debugShowCheckedModeBanner: false,
       home: HomeScreen(),
-
-    ); 
+    );
   }
 }
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
+
